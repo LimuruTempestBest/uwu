@@ -94,11 +94,9 @@ const LanguageList = () => {
             <div className="grid grid-cols-3 mt-3">
             {Data.filter((f) =>(e === "#" && f.title.toLowerCase()[0].match(/[^a-z]/)) || f.title.toLocaleLowerCase().startsWith(e))
                 .map((f) => (
-                  <Link to="browse">
                   <button className="p-2">
                     {f.title}
                   </button>
-                  </Link>
                 ))}
             </div>
           </>
